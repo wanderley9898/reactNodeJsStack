@@ -1,6 +1,25 @@
 # reactNodeJsStack
 Descrição de fluxo de trabalho e ferramentas usadas na stack node js
 
+## Extensões necessárias no vscode
+ESLint
+PostCSS Language Support
+Prisma
+Tailwind CSS IntelliSense
+
+# fluxo de trabalho
+
+## back-end
+### TypeScript + TSX
+### Fastify (Framework)
+### ESlint
+### Prisma + SQLite
+
+## Front-end
+### React + Next.js
+### TailwindCSS
+### ESLint + Prettier Tailwind
+
 ## guia do cavalo...
 ## Backend
 ### Lista de ferramentas usadas
@@ -25,6 +44,7 @@ trocar target em tsconfig.json para es2020
 ajuda a ter menos compilação de código no por ser uma config  pois o node ja reconhece mais códigos atuais sem necessidade de o typescript compilar 
 
 #### setup fastify
+Link para documentação do fastify (https://www.fastify.io/docs/latest/)
 ```shell
 npm i fastify
 ```
@@ -97,4 +117,8 @@ npx tailwindcss init -p //cria o arquivo de configuração
 
 ```shell
 npm i axios
+```
+autenticação de sessão 
+```shell
+npm i @fastify/jwt
 ```
