@@ -7,7 +7,6 @@ PostCSS Language Support
 Prisma
 Tailwind CSS IntelliSense
 
-## guia do cavalo...
 ## Backend
 ### Lista de ferramentas usadas
 fastify :
