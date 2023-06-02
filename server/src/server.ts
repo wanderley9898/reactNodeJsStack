@@ -1,6 +1,15 @@
+import cors from '@fastify/cors'
 import fastify from 'fastify'
 
+import { todoRoutes } from './routes/todo'
+
 const app = fastify()
+
+app.register(cors, {
+  origin: true,
+})
+
+app.register(todoRoutes)
 
 app
   .listen({
