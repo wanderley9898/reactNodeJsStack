@@ -111,7 +111,11 @@ comando para abrir ferramenta integrada de gerenciamento do bd do prisma, muito 
 ```shell
 npx prisma studio
 ```
-
+### validação de dados para a requisição do front
+zod utilizado para validação de dados
+```shell
+npm i zod
+```
 ### Geração de diagramas  
 caso tenha queira gerar diagramas automaticamente 
 ```shell
@@ -129,10 +133,7 @@ npx prisma generate
 ```shell
 npx create-next-app@latest --use-npm
 ```
-zod utilizado para validação de dados
-```shell
-npm i zod
-```
+
 ```shell 
 npm i short-unique-id
 ```
