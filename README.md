@@ -130,6 +130,7 @@ npx prisma generate
 # Lista de ferramentas usadas
 
 # iniciando 
+documentação do nextjs (https://nextjs.org/docs)
 ```shell
 npx create-next-app@latest web-todo --use-npm
 ```
@@ -155,6 +156,11 @@ module.exports = {
 }
 ```
 
+## pacotes de ícones
+link para a documentação do lucide (https://lucide.dev/)
+```shell
+npm i lucide-react
+```
 
 
 

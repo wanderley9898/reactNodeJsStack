@@ -1,6 +1,9 @@
+import { Todos } from '@/components/Todos'
 
 export default function Home() {
   return (
-    <div>hello word</div>
+    <div>
+      <Todos />
+    </div>
   )
 }
