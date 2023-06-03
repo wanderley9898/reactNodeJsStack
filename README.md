@@ -131,18 +131,35 @@ npx prisma generate
 
 # iniciando 
 ```shell
-npx create-next-app@latest --use-npm
+npx create-next-app@latest web-todo --use-npm
 ```
+
+Para utilizar os padrões da rocketseat
+```shell
+npm i @rocketseat/eslint-config -D
+``` 
+agora no arquivo .eslintrc.json e configurar como no exemplo, depois disso ele aponta todos os erros de padrão no projeto
+```shell
+{
+  "extends": [ "next/core-web-vitals", "@rocketseat/eslint-config/react"]
+}
+```
+
+```shell
+npm i prettier-plugin-tailwindcss -D
+```
+agora crie um arquivo prettier.config.js adicionar a seguinte configuração
+```shell
+module.exports = {
+  plugins: [require('prettier-plugin-tailwindcss')],
+}
+```
+
+
+
 
 ```shell 
 npm i short-unique-id
-```
-```shell
-npm i -D tailwindcss postcss autoprefixer
-```
-se o next nao gerou o arquivo tailwind.conf.js use o seguinte comando 
-```shell
-npx tailwindcss init -p //cria o arquivo de configuração
 ```
 
 ```shell
