@@ -162,7 +162,7 @@ link para a documentação do lucide (https://lucide.dev/)
 npm i lucide-react
 ```
 
-
+### check
 
 ```shell 
 npm i short-unique-id
@@ -174,4 +174,81 @@ npm i axios
 autenticação de sessão 
 ```shell
 npm i @fastify/jwt
+```
+
+## Mobile
+reactNative utilizamos o expo link para documentação (https://docs.expo.dev)
+para inicia projeto 
+```shell
+npx create-expo-app my-app
+```
+caso queira usar typescript no projeto troque a extensão do arquivo app.js para app.tsx e inicie o projeto o expo reconhece o typescript e baixara as ferramentas necessárias
+```shell
+npm run start
+```
+para usar a estilização do tailwind no mobile podemos instalar o nativewind (https://www.nativewind.dev/quick-starts/expo)
+```shell
+npm i nativewind
+```
+```shell
+npm i tailwindcss -D
+```
+Executar ```shell npx tailwindcss init ``` para criar um tailwind.config.js arquivo
+
+Adicione os caminhos a todos os seus arquivos de componentes em seu arquivo tailwind.config.js. Lembre-se de substituir <custom directory> pelo nome real do seu diretório, por exemplo screens. costumo usar um diretório com o nome app assim como e feito na web. então crie um diretório app no projeto e substitua <custom directory> por app
+```shell
+// tailwind.config.js
+
+module.exports = {
+- content: [],
++ content: ["./App.{js,jsx,ts,tsx}", "./<custom directory>/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+Modifique seu babel.config.js
+```shell
+// babel.config.js
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ["babel-preset-expo"],
++   plugins: ["nativewind/babel"],
+  };
+};
+```
+se o projeto utiliza typescript modifique o arquivo tsconfig.json
+```shell
+{
+  "compilerOptions": {
++   "types": [
++     "nativewind/types"
+    ]
+  },
+  "extends": "expo/tsconfig.base"
+}
+```
+
+```shell
+npm i eslint @rocketseat/eslint-config -D
+```
+crie o arquivo .eslint.json e adicione
+```shell
+{
+  "extends": [
+    "@rocketseat/eslint-config/react"
+  ] 
+}
+```
+
+```shell
+npm i prettier-plugin-tailwindcss -D
+```
+agora crie um arquivo prettier.config.js adicionar a seguinte configuração
+```shell
+module.exports = {
+  plugins: [require('prettier-plugin-tailwindcss')],
+}
 ```
