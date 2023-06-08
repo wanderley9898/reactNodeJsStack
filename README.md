@@ -121,6 +121,12 @@ caso tenha queira gerar diagramas automaticamente
 ```shell
 npm i prisma-erd-generator @mermaid-js/mermaid-cli -D
 ```
+adicionar config no schema.prisma
+```shell
+generator erd {
+  provider = "prisma-erd-generator"
+}
+```
 gera o diagrama de relacionamento do bd
 ```shell
 npx prisma generate
