@@ -258,3 +258,37 @@ module.exports = {
   plugins: [require('prettier-plugin-tailwindcss')],
 }
 ```
+configuração de fonts
+https://github.com/expo/google-fonts
+
+trabalhar com svg https://github.com/software-mansion/react-native-svg e o https://github.com/kristerkari/react-native-svg-transformer
+
+```shell
+npx expo install react-native-svg                                   ```                                                                        ```shell
+ npm i -D react-native-svg-transformer   
+ ```
+https://expo.github.io/router/docs/
+ ```shell
+ npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar react-native-gesture-handler
+ ```
+ Em seguida, exclua o ponto de entrada em seu package.jsonou substitua-o por index.jsser explícito:
+```
+{
+  "main": "index.js"
+}
+```
+Crie um novo arquivo index.jsna raiz do seu projeto. Se já existir, substitua-o pelo seguinte:
+
+import "expo-router/entry";
+
+Adicione um link direto schemee habilite metroa web em seu app.json(ou app.config.js):
+
+{
+  "expo": {
+    "scheme": "myapp",
+
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
