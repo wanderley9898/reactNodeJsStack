@@ -292,3 +292,6 @@ Adicione um link direto schemee habilite metroa web em seu app.json(ou app.confi
     }
   }
 }
+
+
+authenticacao https://docs.expo.dev/versions/latest/sdk/auth-session/
