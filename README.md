@@ -297,3 +297,5 @@ Adicione um link direto schemee habilite metroa web em seu app.json(ou app.confi
 authenticacao https://docs.expo.dev/versions/latest/sdk/auth-session/
 
 salvar dados de login https://docs.expo.dev/versions/latest/sdk/securestore/
+
+select optione https://www.npmjs.com/package/react-native-select-dropdown
